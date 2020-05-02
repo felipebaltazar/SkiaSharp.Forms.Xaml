@@ -1,0 +1,31 @@
+name: Build and publish packages
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 3.1.101
+    - name: Install dependencies
+      run: dotnet restore
+    - name: Build
+      run: dotnet build --configuration Release --no-restore
+    - name: Test
+      run: dotnet test --no-restore --verbosity normal
+    - name: Push Nupkg to GitHub Packages
+      uses: tanaka-takayoshi/nuget-publish-to-github-packages-action@v2.1
+      with:
+        nupkg-path:  './SkiaSharp.Forms.Xaml/bin/Release/*.nupkg'
+        repo-owner:  'felipebaltazar'
+        gh-user:  'felipebaltazar'
+        token:  ${{ secrets.GITHUB_TOKEN }}
+        skip-duplicate: true
