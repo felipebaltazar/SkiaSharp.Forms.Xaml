@@ -3,9 +3,9 @@
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-            xmlns:local="clr-namespace:Skiasharp.Forms.Xaml.Demo.Views"
+            xmlns:local="clr-namespace:SkiaSharp.Forms.Xaml.Demo.Views"
             mc:Ignorable="d"
-            x:Class="Skiasharp.Forms.Xaml.Demo.MainPage">
+            x:Class="SkiaSharp.Forms.Xaml.Demo.MainPage">
     <local:CirclePage Title="Circle"/>
     <local:RetanglePage Title="Retangle"/>
     <local:TextPage Title="Text"/>

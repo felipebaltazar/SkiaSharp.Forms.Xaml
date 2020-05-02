@@ -19,7 +19,7 @@
 
 ```xaml
         xmlns:skia="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
-        xmlns:skiaXaml="clr-namespace:Skiasharp.Forms.Xaml;assembly=Skiasharp.Forms.Xaml"
+        xmlns:skiaXaml="clr-namespace:SkiaSharp.Forms.Xaml;assembly=SkiaSharp.Forms.Xaml"
 ```
 
 - Insert your SKCanvasView

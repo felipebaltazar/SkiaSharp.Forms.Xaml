@@ -1,8 +1,8 @@
-﻿using Skiasharp.Forms.Xaml.Demo.ViewModels;
+﻿using SkiaSharp.Forms.Xaml.Demo.ViewModels;
 
 using Xamarin.Forms;
 
-namespace Skiasharp.Forms.Xaml.Demo.Views
+namespace SkiaSharp.Forms.Xaml.Demo.Views
 {
     public partial class TextPage : ContentPage
     {

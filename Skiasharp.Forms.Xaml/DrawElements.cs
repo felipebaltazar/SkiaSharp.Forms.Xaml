@@ -1,4 +1,4 @@
-﻿using Skiasharp.Forms.Xaml.Abstractions;
+﻿using SkiaSharp.Forms.Xaml.Abstractions;
 using SkiaSharp.Views.Forms;
 using System.Collections;
 using System.Collections.Generic;
@@ -6,7 +6,7 @@ using System.Collections.ObjectModel;
 using System.Collections.Specialized;
 using Xamarin.Forms;
 
-namespace Skiasharp.Forms.Xaml
+namespace SkiaSharp.Forms.Xaml
 {
     public class DrawElements<TElement> : ObservableCollection<TElement> where TElement : DrawElement, IWithParentElement
     {

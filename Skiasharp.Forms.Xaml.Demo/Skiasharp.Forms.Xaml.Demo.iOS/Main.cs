@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace Skiasharp.Forms.Xaml.Demo.iOS
+namespace SkiaSharp.Forms.Xaml.Demo.iOS
 {
     public class Application
     {

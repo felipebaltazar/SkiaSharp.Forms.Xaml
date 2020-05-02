@@ -1,6 +1,6 @@
 ﻿using SkiaSharp;
 
-namespace Skiasharp.Forms.Xaml
+namespace SkiaSharp.Forms.Xaml
 {
     public struct DrawContext
     {

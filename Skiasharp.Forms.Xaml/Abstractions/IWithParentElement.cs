@@ -1,6 +1,6 @@
 ﻿using SkiaSharp.Views.Forms;
 
-namespace Skiasharp.Forms.Xaml.Abstractions
+namespace SkiaSharp.Forms.Xaml.Abstractions
 {
     public interface IWithParentElement
     {

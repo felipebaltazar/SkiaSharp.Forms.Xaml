@@ -9,9 +9,9 @@
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{6143fdea-f3c2-4a09-aafa-6e230626515e}</TemplateGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Skiasharp.Forms.Xaml.Demo.iOS</RootNamespace>
+    <RootNamespace>SkiaSharp.Forms.Xaml.Demo.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>Skiasharp.Forms.Xaml.Demo.iOS</AssemblyName>
+    <AssemblyName>SkiaSharp.Forms.Xaml.Demo.iOS</AssemblyName>
     <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
     <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
     <ProvisioningType>automatic</ProvisioningType>
@@ -131,13 +131,13 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\..\Skiasharp.Forms.Xaml\Skiasharp.Forms.Xaml.csproj">
+    <ProjectReference Include="..\..\SkiaSharp.Forms.Xaml\SkiaSharp.Forms.Xaml.csproj">
       <Project>{191d374d-8e12-4777-906b-5aefebf14a37}</Project>
-      <Name>Skiasharp.Forms.Xaml</Name>
+      <Name>SkiaSharp.Forms.Xaml</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Skiasharp.Forms.Xaml.Demo\Skiasharp.Forms.Xaml.Demo.csproj">
+    <ProjectReference Include="..\SkiaSharp.Forms.Xaml.Demo\SkiaSharp.Forms.Xaml.Demo.csproj">
       <Project>{50E91ABC-E7FB-478E-9760-A49A1EACC1F7}</Project>
-      <Name>Skiasharp.Forms.Xaml.Demo</Name>
+      <Name>SkiaSharp.Forms.Xaml.Demo</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>

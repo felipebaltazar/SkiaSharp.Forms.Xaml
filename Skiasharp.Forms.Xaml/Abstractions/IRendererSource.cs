@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Skiasharp.Forms.Xaml.Abstractions
+namespace SkiaSharp.Forms.Xaml.Abstractions
 {
     public interface IRendererSource : IWithParentElement
     {

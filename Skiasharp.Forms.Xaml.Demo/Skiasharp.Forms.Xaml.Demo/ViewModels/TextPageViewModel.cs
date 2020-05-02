@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Skiasharp.Forms.Xaml.Demo.ViewModels
+namespace SkiaSharp.Forms.Xaml.Demo.ViewModels
 {
     public class TextPageViewModel : BaseViewModel
     {

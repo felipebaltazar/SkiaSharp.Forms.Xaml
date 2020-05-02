@@ -2,7 +2,7 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace Skiasharp.Forms.Xaml.Demo
+namespace SkiaSharp.Forms.Xaml.Demo
 {
     public partial class App : Application
     {

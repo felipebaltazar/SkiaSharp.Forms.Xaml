@@ -1,7 +1,7 @@
-﻿using Skiasharp.Forms.Xaml.Exceptions;
+﻿using SkiaSharp.Forms.Xaml.Exceptions;
 using Xamarin.Forms;
 
-namespace Skiasharp.Forms.Xaml
+namespace SkiaSharp.Forms.Xaml
 {
     [ContentProperty(nameof(Source))]
     public class Text : PaintableDraw

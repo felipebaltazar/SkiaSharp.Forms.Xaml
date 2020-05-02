@@ -1,8 +1,8 @@
-﻿using Skiasharp.Forms.Xaml.Abstractions;
+﻿using SkiaSharp.Forms.Xaml.Abstractions;
 using SkiaSharp.Views.Forms;
 using Xamarin.Forms;
 
-namespace Skiasharp.Forms.Xaml
+namespace SkiaSharp.Forms.Xaml
 {
     public static class DrawSurface
     {

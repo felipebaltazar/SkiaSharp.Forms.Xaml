@@ -1,4 +1,4 @@
-﻿namespace Skiasharp.Forms.Xaml.Abstractions
+﻿namespace SkiaSharp.Forms.Xaml.Abstractions
 {
     public interface IInvalidateElement
     {

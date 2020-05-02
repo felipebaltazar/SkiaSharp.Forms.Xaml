@@ -4,9 +4,9 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:skia="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
-             xmlns:skiaXaml="clr-namespace:Skiasharp.Forms.Xaml;assembly=Skiasharp.Forms.Xaml"
+             xmlns:skiaXaml="clr-namespace:SkiaSharp.Forms.Xaml;assembly=SkiaSharp.Forms.Xaml"
              mc:Ignorable="d"
-             x:Class="Skiasharp.Forms.Xaml.Demo.Views.CirclePage">
+             x:Class="SkiaSharp.Forms.Xaml.Demo.Views.CirclePage">
     <ContentPage.Content>
         <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
             <skia:SKCanvasView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">

@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Skiasharp.Forms.Xaml\Skiasharp.Forms.Xaml.csproj" />
+    <ProjectReference Include="..\..\SkiaSharp.Forms.Xaml\SkiaSharp.Forms.Xaml.csproj" />
   </ItemGroup>
 
   <ItemGroup>

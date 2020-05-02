@@ -1,6 +1,6 @@
 ﻿using Xamarin.Forms;
 
-namespace Skiasharp.Forms.Xaml.Demo
+namespace SkiaSharp.Forms.Xaml.Demo
 {
     public partial class MainPage : TabbedPage
     {

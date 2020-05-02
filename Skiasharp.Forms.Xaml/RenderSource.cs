@@ -1,9 +1,9 @@
-﻿using Skiasharp.Forms.Xaml.Abstractions;
+﻿using SkiaSharp.Forms.Xaml.Abstractions;
 using SkiaSharp.Views.Forms;
 using System.Collections.Generic;
 using Xamarin.Forms;
 
-namespace Skiasharp.Forms.Xaml
+namespace SkiaSharp.Forms.Xaml
 {
     [ContentProperty(nameof(Source))]
     public class RendererSource : BindableObject, IRendererSource

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.Serialization;
 
-namespace Skiasharp.Forms.Xaml.Exceptions
+namespace SkiaSharp.Forms.Xaml.Exceptions
 {
     public class InvalidDrawParameterException : ArgumentNullException
     {

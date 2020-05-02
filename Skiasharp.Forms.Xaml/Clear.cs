@@ -1,7 +1,7 @@
 ﻿using SkiaSharp.Views.Forms;
 using Xamarin.Forms;
 
-namespace Skiasharp.Forms.Xaml
+namespace SkiaSharp.Forms.Xaml
 {
     public class Clear : DrawElement
     {

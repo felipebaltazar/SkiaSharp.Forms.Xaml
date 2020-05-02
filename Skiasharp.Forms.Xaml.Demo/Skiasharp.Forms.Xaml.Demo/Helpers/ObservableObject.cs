@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace Skiasharp.Forms.Xaml.Demo.Helpers
+namespace SkiaSharp.Forms.Xaml.Demo.Helpers
 {
     public class ObservableObject : INotifyPropertyChanged
     {

@@ -1,4 +1,4 @@
-﻿namespace Skiasharp.Forms.Xaml.Demo.ViewModels
+﻿namespace SkiaSharp.Forms.Xaml.Demo.ViewModels
 {
     public class RetanglePageViewModel : BaseViewModel
     {

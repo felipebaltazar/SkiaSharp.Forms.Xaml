@@ -1,6 +1,6 @@
-﻿using Skiasharp.Forms.Xaml.Demo.Helpers;
+﻿using SkiaSharp.Forms.Xaml.Demo.Helpers;
 
-namespace Skiasharp.Forms.Xaml.Demo.ViewModels
+namespace SkiaSharp.Forms.Xaml.Demo.ViewModels
 {
     public abstract class BaseViewModel : ObservableObject
     {
