@@ -1,8 +1,9 @@
 # SkiaSharp.Forms.Xaml
- xaml extensions for SkiaSharp
+ Xaml extensions for SkiaSharp
  
-## Examples
+ ![Build and publish packages](https://github.com/felipebaltazar/SkiaSharp.Forms.Xaml/workflows/Build%20and%20publish%20packages/badge.svg?branch=master)
 
+## Examples
 
 ![example](https://user-images.githubusercontent.com/19656249/80853300-19dfa100-8c06-11ea-9b58-e6948367f0e5.gif)
 
