@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:skia="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
+             xmlns:skiaXaml="clr-namespace:Skiasharp.Forms.Xaml;assembly=Skiasharp.Forms.Xaml"
+             mc:Ignorable="d"
+             x:Class="Skiasharp.Forms.Xaml.Demo.Views.RetanglePage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" >
+            <skia:SKCanvasView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <skiaXaml:DrawSurface.Renderer>
+                    <skiaXaml:RendererSource>
+                        <skiaXaml:Clear/>
+
+                        <skiaXaml:Rectangle X="{Binding PositionX}"
+                                            Y="{Binding PositionY}"
+                                            Width="{Binding Width}"
+                                            Height="{Binding Height}"
+                                            Color="Blue"/>
+                        
+                        <skiaXaml:Rectangle X="{Binding PositionX}"
+                                            Y="{Binding PositionY}"
+                                            Width="{Binding Width}"
+                                            Height="{Binding Height}"
+                                            StrokeWidth="{Binding StrokeWidth}"
+                                            Color="Green" Style="Stroke"/>
+
+                        <skiaXaml:Circle CenterX="500" CenterY="500" Radius="250" Color="Black"/>
+
+
+                    </skiaXaml:RendererSource>
+                </skiaXaml:DrawSurface.Renderer>
+            </skia:SKCanvasView>
+            
+            <Label Margin="15,0" FontSize="Medium" Text="Width"/>
+            <Slider Value="{Binding Width, Mode=TwoWay}" Maximum="1800" Minimum="5" />
+
+            <Label Margin="15,0" FontSize="Medium" Text="Height"/>
+            <Slider Value="{Binding Height, Mode=TwoWay}" Maximum="1800" Minimum="5" />
+
+            <Label Margin="15,0" FontSize="Medium"  Text="Position X"/>
+            <Slider Value="{Binding PositionX, Mode=TwoWay}" Maximum="1800" Minimum="5" />
+
+            <Label Margin="15,0" FontSize="Medium" Text="Position Y"/>
+            <Slider Value="{Binding PositionY, Mode=TwoWay}" Maximum="1800" Minimum="5" />
+
+            <Label Margin="15,0" FontSize="Medium" Text="StrokeWidth"/>
+            <Slider Value="{Binding StrokeWidth, Mode=TwoWay}" Maximum="250" Minimum="5" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
