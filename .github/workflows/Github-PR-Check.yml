@@ -17,5 +17,3 @@ jobs:
       run: dotnet restore
     - name: Build
       run: dotnet build SkiaSharp.Forms.Xaml/SkiaSharp.Forms.Xaml.csproj --configuration Release  --no-restore
-    - name: Test
-      run: dotnet test --no-restore --verbosity normal
