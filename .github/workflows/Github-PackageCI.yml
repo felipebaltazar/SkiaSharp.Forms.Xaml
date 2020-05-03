@@ -15,10 +15,8 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 3.1.101
-    - name: Install dependencies
-      run: dotnet restore
     - name: Build
-      run: dotnet build SkiaSharp.Forms.Xaml/SkiaSharp.Forms.Xaml.csproj --configuration Release  --no-restore
+      run: dotnet build SkiaSharp.Forms.Xaml/SkiaSharp.Forms.Xaml.csproj --configuration Release
     - name: Pack
       run: dotnet pack ./SkiaSharp.Forms.Xaml/SkiaSharp.Forms.Xaml.csproj  --output ./artifacts --configuration Release
     - name: Push Nupkg to GitHub Packages
