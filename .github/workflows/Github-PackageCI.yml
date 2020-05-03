@@ -16,9 +16,9 @@ jobs:
       with:
         dotnet-version: 3.1.101
     - name: Build
-      run: dotnet build ./Skiasharp.Forms.Xaml/Skiasharp.Forms.Xaml.csproj --configuration Release
+      run: dotnet build ./SkiaSharp.Forms.Xaml/SkiaSharp.Forms.Xaml.csproj --configuration Release
     - name: Pack
-      run: dotnet pack ./Skiasharp.Forms.Xaml/Skiasharp.Forms.Xaml.csproj  --output ./artifacts --configuration Release
+      run: dotnet pack ./SkiaSharp.Forms.Xaml/SkiaSharp.Forms.Xaml.csproj  --output ./artifacts --configuration Release
     - name: Push Nupkg to GitHub Packages
       uses: tanaka-takayoshi/nuget-publish-to-github-packages-action@v2.1
       with:
