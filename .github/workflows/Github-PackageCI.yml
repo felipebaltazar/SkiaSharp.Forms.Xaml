@@ -7,7 +7,7 @@ on:
 jobs:
   build:
 
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
@@ -19,11 +19,12 @@ jobs:
       run: dotnet restore
     - name: Build
       run: dotnet build SkiaSharp.Forms.Xaml/SkiaSharp.Forms.Xaml.csproj --configuration Release  --no-restore
+    - name: Pack
+      run: dotnet pack ./SkiaSharp.Forms.Xaml/SkiaSharp.Forms.Xaml.csproj  --output ./artifacts --configuration Release
     - name: Push Nupkg to GitHub Packages
       uses: tanaka-takayoshi/nuget-publish-to-github-packages-action@v2.1
       with:
-        nupkg-path:  './SkiaSharp.Forms.Xaml/bin/Release/*.nupkg'
+        nupkg-path:  './artifacts/*.nupkg'
         repo-owner:  'felipebaltazar'
         gh-user:  'felipebaltazar'
         token:  ${{ secrets.GITHUB_TOKEN }}
-        skip-duplicate: true
