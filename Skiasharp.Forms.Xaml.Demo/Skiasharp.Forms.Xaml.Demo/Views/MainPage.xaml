@@ -6,7 +6,8 @@
             xmlns:local="clr-namespace:SkiaSharp.Forms.Xaml.Demo.Views"
             mc:Ignorable="d"
             x:Class="SkiaSharp.Forms.Xaml.Demo.MainPage">
-    <local:CirclePage Title="Circle"/>
     <local:RetanglePage Title="Retangle"/>
+    <local:CirclePage Title="Circle"/>
     <local:TextPage Title="Text"/>
+    <local:PathPage Title="Path"/>
 </TabbedPage>

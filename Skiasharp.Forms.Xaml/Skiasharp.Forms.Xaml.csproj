@@ -3,13 +3,14 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.0-pre</Version>
+    <Version>1.1.0-pre</Version>
     <Authors>Felipe Baltazar</Authors>
     <Description>SkiaSharp extensions for create draws draws on XAML</Description>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageProjectUrl>https://github.com/felipebaltazar/SkiaSharp.Forms.Xaml</PackageProjectUrl>
     <RepositoryUrl>https://github.com/felipebaltazar/SkiaSharp.Forms.Xaml</RepositoryUrl>
     <PackageTags>skiasharp,xaml,extension,xamarin-forms,xamarin</PackageTags>
+    <PackageReleaseNotes>Support for Path in xaml</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>

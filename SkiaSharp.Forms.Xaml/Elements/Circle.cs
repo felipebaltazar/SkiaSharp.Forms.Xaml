@@ -50,7 +50,7 @@ namespace SkiaSharp.Forms.Xaml
             drawContext.Canvas.DrawCircle(CenterX.Value, CenterY.Value, Radius.Value, drawContext.Paint);
         }
 
-        private void EnsureParameters()
+        protected virtual void EnsureParameters()
         {
             if (!CenterX.HasValue)
                 throw new InvalidDrawParameterException(nameof(CenterX));

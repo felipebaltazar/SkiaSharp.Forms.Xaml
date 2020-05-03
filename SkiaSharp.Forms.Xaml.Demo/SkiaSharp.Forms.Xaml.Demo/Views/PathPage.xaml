@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:skia="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
+             xmlns:skiaXaml="clr-namespace:SkiaSharp.Forms.Xaml;assembly=SkiaSharp.Forms.Xaml"
+             mc:Ignorable="d"
+             x:Class="SkiaSharp.Forms.Xaml.Demo.Views.PathPage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" >
+            <skia:SKCanvasView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <skiaXaml:DrawSurface.Renderer>
+                    <skiaXaml:RendererSource>
+                        <skiaXaml:Clear/>
+                        <skiaXaml:Path Color="Black" StrokeWidth="25" Style="Stroke" >
+                            <skiaXaml:MoveTo X="{Binding StartX}" Y="{Binding StartY}"/>
+                            <skiaXaml:LineTo X="{Binding LineX}" Y="{Binding LineY}"/>
+                            <skiaXaml:ArcTo X="{Binding ArcX}" Y="{Binding ArcY}" Radius="{Binding ArcRadius}" ArchSize="Small" />
+                            <skiaXaml:Close/>
+                        </skiaXaml:Path>
+                    </skiaXaml:RendererSource>
+                </skiaXaml:DrawSurface.Renderer>
+            </skia:SKCanvasView>
+
+            <Label Margin="15,0" FontSize="Medium" Text="Start X"/>
+            <Slider Value="{Binding StartX, Mode=TwoWay}" Maximum="1800" Minimum="5" />
+
+            <Label Margin="15,0" FontSize="Medium" Text="Start Y"/>
+            <Slider Value="{Binding StartY, Mode=TwoWay}" Maximum="1800" Minimum="5" />
+
+            <Label Margin="15,0" FontSize="Medium"  Text="Line X"/>
+            <Slider Value="{Binding LineX, Mode=TwoWay}" Maximum="1800" Minimum="5" />
+
+            <Label Margin="15,0" FontSize="Medium" Text="Line Y"/>
+            <Slider Value="{Binding LineY, Mode=TwoWay}" Maximum="1800" Minimum="5" />
+
+            <Label Margin="15,0" FontSize="Medium" Text="Arc X"/>
+            <Slider Value="{Binding ArcX, Mode=TwoWay}" Maximum="1800" Minimum="5" />
+
+            <Label Margin="15,0" FontSize="Medium" Text="Arc Y"/>
+            <Slider Value="{Binding ArcY, Mode=TwoWay}" Maximum="1800" Minimum="5" />
+
+            <Label Margin="15,0" FontSize="Medium" Text="Arc Radius"/>
+            <Slider Value="{Binding ArcRadius, Mode=TwoWay}" Maximum="1800" Minimum="5" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
