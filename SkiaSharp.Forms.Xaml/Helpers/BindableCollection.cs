@@ -8,15 +8,16 @@ using Xamarin.Forms;
 
 namespace SkiaSharp.Forms.Xaml
 {
-    public class DrawElements<TElement> : ObservableCollection<TElement> where TElement : DrawElement, IWithParentElement
+    public abstract class BindableCollection<TElement> : ObservableCollection<TElement>
+        where TElement : BindableObject, IWithParentElement
     {
         public SKCanvasView Parent { get; set; }
 
-        public DrawElements() { }
+        protected BindableCollection() { }
 
-        public DrawElements(IEnumerable<TElement> collection) : base(collection) { }
+        protected BindableCollection(IEnumerable<TElement> collection) : base(collection) { }
 
-        public DrawElements(List<TElement> list) : base(list) { }
+        protected BindableCollection(List<TElement> list) : base(list) { }
 
         protected override void OnCollectionChanged(NotifyCollectionChangedEventArgs e)
         {
